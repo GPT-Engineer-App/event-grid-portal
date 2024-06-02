@@ -50,8 +50,8 @@ const Index = () => {
           {events.map((event) => {
             const Icon = categoryIcons[event.category];
             return (
-              <Box key={event.id} borderWidth="1px" borderRadius="lg" overflow="hidden">
-                <Image src={event.image} alt={event.title} />
+              <Box key={event.id} borderWidth="1px" borderRadius="lg" overflow="hidden" width="300px" height="400px">
+                <Image src={event.image} alt={event.title} width="300px" height="200px" objectFit="cover" />
                 <Box p={6}>
                   <HStack spacing={4} mb={4}>
                     <Icon size="24px" />
