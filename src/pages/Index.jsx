@@ -31,6 +31,34 @@ const events = [
     category: "Theater",
     image: "https://images.unsplash.com/photo-1503095396549-807759245b35?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHx0aGVhdGVyJTIwcGxheXxlbnwwfHx8fDE3MTczMjg4ODR8MA&ixlib=rb-4.0.3&q=80&w=1080",
   },
+  {
+    id: 5,
+    title: "Jazz Night",
+    date: "2024-06-05",
+    category: "Music",
+    image: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxqYXp6JTIwbmlnaHR8ZW58MHx8fHwxNzE3MzI4ODg0fDA&ixlib=rb-4.0.3&q=80&w=1080",
+  },
+  {
+    id: 6,
+    title: "Modern Art Showcase",
+    date: "2024-06-10",
+    category: "Art",
+    image: "https://images.unsplash.com/photo-1532634896-26909d0d4b6a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxhc3QlMjBzaG93Y2FzZXxlbnwwfHx8fDE3MTczMjg4ODR8MA&ixlib=rb-4.0.3&q=80&w=1080",
+  },
+  {
+    id: 7,
+    title: "Indie Film Screening",
+    date: "2024-06-15",
+    category: "Film",
+    image: "https://images.unsplash.com/photo-1511765224389-37f0e77cf0eb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxpbmRpZSUyMGZpbG18ZW58MHx8fHwxNzE3MzI4ODg0fDA&ixlib=rb-4.0.3&q=80&w=1080",
+  },
+  {
+    id: 8,
+    title: "Shakespeare in the Park",
+    date: "2024-06-20",
+    category: "Theater",
+    image: "https://images.unsplash.com/photo-1503095396549-807759245b35?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxzaGVha2VzcGVhcmUlMjB0aGVhdGVyfGVufDB8fHx8MTcxNzMyODg4NHww&ixlib=rb-4.0.3&q=80&w=1080",
+  },
 ];
 
 const categoryIcons = {
