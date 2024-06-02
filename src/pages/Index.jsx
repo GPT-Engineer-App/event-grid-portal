@@ -1,4 +1,5 @@
 import { Container, SimpleGrid, Box, Text, VStack, HStack, Tag, Image } from "@chakra-ui/react";
+import { useEffect, useState } from "react";
 import { FaCalendarAlt, FaMusic, FaFilm, FaPaintBrush } from "react-icons/fa";
 
 const events = [
@@ -39,7 +40,16 @@ const categoryIcons = {
   Theater: FaCalendarAlt,
 };
 
-const Index = () => {
+const Index = ({ selectedCategory }) => {
+  const [filteredEvents, setFilteredEvents] = useState(events);
+
+  useEffect(() => {
+    if (selectedCategory) {
+      setFilteredEvents(events.filter((event) => event.category === selectedCategory));
+    } else {
+      setFilteredEvents(events);
+    }
+  }, [selectedCategory]);
   return (
     <Container maxW="container.xl" py={10}>
       <VStack spacing={8}>
@@ -47,7 +57,7 @@ const Index = () => {
           Upcoming Events
         </Text>
         <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={10}>
-          {events.map((event) => {
+          {filteredEvents.map((event) => {
             const Icon = categoryIcons[event.category];
             return (
               <Box key={event.id} borderWidth="1px" borderRadius="lg" overflow="hidden" width="300px" height="400px">
