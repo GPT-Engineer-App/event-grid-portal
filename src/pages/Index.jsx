@@ -84,7 +84,7 @@ const Index = ({ selectedCategory }) => {
         <Text fontSize="4xl" fontWeight="bold">
           Upcoming Events
         </Text>
-        <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={10}>
+        <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={10} spacingX={5}>
           {filteredEvents.map((event) => {
             const Icon = categoryIcons[event.category];
             return (
