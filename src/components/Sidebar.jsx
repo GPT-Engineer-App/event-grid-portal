@@ -1,6 +1,6 @@
 import { Box, List, ListItem, Button } from "@chakra-ui/react";
 
-const categories = ["Category 1", "Category 2", "Category 3"];
+const categories = ["Music", "Art", "Film", "Theater"];
 
 function Sidebar({ selectedCategory, setSelectedCategory }) {
   return (
